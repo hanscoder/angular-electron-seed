@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'app works!';
 
   public doSomething(): void {
-    this.title = 'click works!';
+    console.log('click works2!');
+    this.title = 'click works2!';
   }
 }

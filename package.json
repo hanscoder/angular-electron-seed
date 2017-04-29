@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "run": "electron .",
-    "start": "concurrently \"webpack-dev-server --port=4200\" \"electron src/entry.live.js\"",
+    "run": "electron . --remote-debugging-port=9222",
+    "start": "concurrently \"webpack-dev-server --port=4200\" \"electron src/entry.live.js --remote-debugging-port=9222\"",
     "ng": "ng",
     "build": "webpack",
     "test": "karma start ./karma.conf.js",
