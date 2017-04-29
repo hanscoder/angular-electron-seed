@@ -29,4 +29,13 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('app works!');
   }));
+
+  it('should change tilte by click', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+
+    app.doSomething();
+
+    expect(app.title).toEqual('click works!');
+  }));
 });
